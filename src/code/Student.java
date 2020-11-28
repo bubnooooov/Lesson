@@ -1,8 +1,10 @@
+package code;
+
 public class Student extends Group {
-    private static int i = 1;
     private final String studentOfGroup;
     private final int id;
     private final int rate;
+    private static int i = 1;
     private boolean isLeader;
 
     public Student(String studentOfGroup) {

@@ -1,3 +1,5 @@
+package code;
+
 import java.util.Queue;
 
 public class Lesson {
@@ -10,7 +12,15 @@ public class Lesson {
         synchronized (lock) {
             System.out.println("Lesson has started");
             teacher.greetings();
-            for (Object std : group) System.out.println(std);
+            // перебор учеников для их вызова
+            for (Object std : group) {
+                System.out.println(std);
+                try {
+                    Thread.sleep(500);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            }
             try {
                 Thread.sleep(2000);
             } catch (InterruptedException e) {

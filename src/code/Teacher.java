@@ -1,3 +1,5 @@
+package code;
+
 public class Teacher extends Teachers {
     private final String name;
     private final String profile;

@@ -1,3 +1,5 @@
+package code;
+
 public interface Talkable {
     void greetings();
     default void goodbye() {
